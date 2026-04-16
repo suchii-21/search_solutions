@@ -9,7 +9,7 @@ from urllib.parse import quote
 import mimetypes
 class PREVIEWFILES:
     """ 
-    class to preview the files for 5 minutes
+    class to preview the files for 1 hour
     
     """
 
@@ -47,7 +47,7 @@ class PREVIEWFILES:
         blob_service_client = BlobServiceClient(account_url=account_url, credential=self.credential)
 
         now = datetime.now(timezone.utc)
-        expiry = now + timedelta(minutes=5)
+        expiry = now + timedelta(hours=1)
         user_delegation_key = blob_service_client.get_user_delegation_key(
             key_start_time=now,
             key_expiry_time=expiry
