@@ -23,6 +23,12 @@ def get_case_info(req: func.HttpRequest) -> func.HttpResponse:
         from get_top_chunks import GETTOPCHUNKS
     except Exception as e:
         logging.error(f'Failed to open the vector   file: {e}')
+
+    try:
+        from pii_redaction import PIIREDACTION
+   
+    except Exception as e:
+        logging.error(f'Failed to open the pii redaction file   file: {e}')
         
     try:
     #get user_query related 
@@ -138,7 +144,9 @@ def get_case_info(req: func.HttpRequest) -> func.HttpResponse:
                 data.append('No data because, it is confidential')
 
             
-            result = "\n\n".join(data)
+            result = data
+
+
             
         ##get response for the staff related search
         if query_intent_type == 'staff_related':
@@ -155,7 +163,7 @@ def get_case_info(req: func.HttpRequest) -> func.HttpResponse:
 
             else:
                data = [text['context'] for text in get_relevant_chunks]
-            result = "\n\n".join(data)
+            result = data
         
         try:
             get_preview_link = PREVIEWFILES()
@@ -164,19 +172,37 @@ def get_case_info(req: func.HttpRequest) -> func.HttpResponse:
             logging.error(f'Failed to get the citations')
             get_link = 'No File to Preview'
             
-                    
+        logging.warning(f'og text before redacting : {result}')    
+        try:
+            get_redacted = PIIREDACTION()
+            get_redacted_list = get_redacted.redact_pii(result)
+
+            get_redacted_pii_value = " ".join([r['redacted_text'] for r in get_redacted_list])
+            get_mapped_value = {}
+            for r in get_redacted_list:
+                get_mapped_value.update(r['mapping'])
+
+        except Exception as e:
+            logging.error(f'Failed to get the redaction due to : {e}')
+            get_redacted_pii_value = " No value to redact"  
+            get_mapped_value = {}
+
 
         #if semantic chunks are there 
         if get_relevant_chunks:
             try:
                 if query_intent_type in [ 'staff_related' , 'customer_related', 'case_related']:
-                    logging.warning(f"sending to AI : {result}")
-                    get_repeated_staff = ai_response.get_query_response(
+                    logging.warning(f"sending to AI redacted value : {get_redacted_pii_value}")
+                    llm_response = ai_response.get_query_response(
                                                     user_query,
                                                     query_intent_type,
-                                                    result,
+                                                    get_redacted_pii_value,
                                                     ai_response.repeated_offender_prompt)
                     
+
+                    logging.warning(f'redacted ai response : {llm_response}')
+                    get_repeated_staff = get_redacted.restore_pii(llm_response, get_mapped_value) # type: ignore
+                    logging.warning(f'final response : {get_repeated_staff}')
                     final_response = {
                         'response' : get_repeated_staff,
                         'path' : citations,
@@ -191,7 +217,7 @@ def get_case_info(req: func.HttpRequest) -> func.HttpResponse:
             
             except Exception as staff_err:
                 logging.error(f'Error while fetching response from AI due to : {staff_err}')
-                return func.HttpResponse(json.dumps('Please enter a valid query'),
+                return func.HttpResponse(json.dumps({'message':'Please enter a valid query'} ),
                                  status_code = 400,
                                  mimetype="application/json")
 
@@ -243,7 +269,7 @@ def get_case_info(req: func.HttpRequest) -> func.HttpResponse:
 
     except Exception as e:
                 logging.error(f'Failure to get the releavnt chunks due to : {e}')
-                return func.HttpResponse(json.dumps('Please enter a valid query'),
+                return func.HttpResponse(json.dumps({'message' : 'Please enter a valid query'}),
                                     status_code = 400,
                                     mimetype="application/json")
     

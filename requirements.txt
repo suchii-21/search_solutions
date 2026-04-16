@@ -11,3 +11,4 @@ azure-keyvault-secrets
 azure-appconfiguration-provider
 openai
 azure-storage-blob
+azure.ai.textanalytics

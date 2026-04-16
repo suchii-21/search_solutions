@@ -1,0 +1,126 @@
+og text : 
+
+ ["Fraud Examination Report\nReport Details:\n\tCase Reference ID:\n\t11122019/1/HD\n\n\tReport:\n\tSignature Forgery - RAHUL - RIM No 1362965041, Staff ID 90530\n\n\tIncident Reporting Committee/Unit\n\tHuman Resource\n\n\tIncident Reporting Date:\n\t2019-12-11\n\n\tAmount Involved:\n\t242756\n\n\tActual Loss:\n\t290721\n\n\tSAR/STR raised? If yes, add ref no.:\n\tFID-2019-30001\n\n\tReport Issuance Date:\n\t2020-04-06\n\n\nIncident Details:\n\tIncident Date/Period\n\t2019-12-11\n\n\nInvolved Staff Details:\n\tStaff Name\n\tDesignation\n\tStaff ID\n\n\tRAHUL\n\tSignature Forgery\n\t90530\n\n\nDistribution List\n\tTBD\n\t\n\n\t\n\t\n\n\nInvestigation Team\n\tArjun Reddy (Staff ID: xxxxx)\n\tInvestigator / Report Preparer\n\n\tNeha Patel (Staff ID: xxxxx)\n\tReport Reviewer\n\n\tVikram Singh (Staff ID: xxxxx)\n\tReport Verifier & Issuer\n\n\n1.  Background\n1. 2019-12-11: Case received from Human Resource. Nature: Signature Forgery. Severity: Medium.\n2.  Scope\n1. The scope of the investigation is limited to the review of the abovementioned incident and related events including but not limited to:\n1. Verify the accuracy of the customer's allegations.\n1. Understand the motives of the staff involved.\n3.  Approach\n3.1.  Review undertaken:\n1. Review the FinnOne Applications.\n3.2.  Individuals Interviewed:\n1. RAHUL\n1. Arjun Reddy\n4.  Executive Summary\n1. Case Reference: 11122019/1/HD\n1. Applicant: RAHUL (App ID: 1362965041)\n1. Nature of Incident: Signature Forgery (Signature Forgery)\n1. Referred By: Human Resource\n1. Sanadak: No | Severity: Medium\n1. Staff ID: 90530 | Staff Involved: Yes\n1. Fraud Type: Internal Fraud\n1. STR Requirement: Yes | FID Report Ref: FID-2019-30001\n5.  Findings\n1. Activities:\n1. Captioned case logged under CARDS_AFTER_MURABAHA-PDC scheme.\n\n1. FRM Findings:\n1. Applicant (RAHUL) contacted. Irregularities linked to Signature Forgery identified.\n1. Signature mismatch and KYC deviation observed.\n\n1. Exposure Check:\n1. Internal watchlist and previous applications screened - no further matches.\n\n1. Action Taken:", '{\r\n  "Sl No": 1.0,\r\n  "Daily Log Reference": "11122019/1/HD",\r\n  "Case Reference": "Signature Forgery \\u2013 RAHUL \\u2013 RIM No 1362965041, Staff ID 90530",\r\n  "Referred By": "Human Resource",\r\n  "Nature of Incidents": "Signature Forgery",\r\n  "Sanadak (Yes/No)": "No",\r\n  "Severity": "",\r\n  "Date Received": "2019-12-11 00:00:00",\r\n  "Assigned Year": 2019.0,\r\n  "Month": 12.0,\r\n  "Case Summary": "\\u2022\\tStatus: Closed | Stage: With Investigator\\n\\u2022\\tAging: Completed | Days: 191\\n\\u2022\\tAmount Involved: AED 242756 | Actual Loss: AED 290721\\n\\u2022\\tCurrent Owner: Vikram Singh\\n\\u2022\\tCurrent Remarks: Documents verified and under supervisory review",\r\n  "Actual Amount": 290721.0,\r\n  "Amount Involved": 242756.0,\r\n  "Target / Completion Date": "2020-04-06 00:00:00",\r\n  "Aging": "Completed",\r\n  "Assigned To": "Arjun Reddy ",\r\n  "Reviewer": "Neha Patel ",\r\n  "Status": "closed",\r\n  "Stage": "With Investigator",\r\n  "Closure Date": "",\r\n  "FID Report Ref": "FID-2019-30001",\r\n  "Days": 191.0,\r\n  "Current Owner": "Vikram Singh",\r\n  "Date of Return": "",\r\n  "Date of sharing for issuance": "",\r\n  "Date of sharing for reviewer": "",\r\n  "Handover Date": "",\r\n  "Current Remarks": "Documents verified and under supervisory review",\r\n  "DC Recommended (Y/N)": "Yes",\r\n  "Staff Involved (Y/N)": "Yes",\r\n  "Staff ID": 90530.0,\r\n  "STR Requirement (Y/N)": "Yes",\r\n  "Internal / External Fraud / Not Applicable": "Internal Fraud",\r\n  "Case Closure Checklist (Y/N)": "Yes",\r\n  "Confidential_flag(Y/N)": "No"\r\n}']
+
+
+
+redacted text :
+
+
+sending to AI redacted value : Fraud Examination Report
+Report Details:
+        Case Reference ID:
+        11122019/1/HD
+
+        Report:
+        Signature Forgery - <organization_1> - RIM No <phone_1>, <staffid_1>
+
+        <organization_2>/<organization_3>
+        <organization_4>
+
+        Incident Reporting Date:
+        <dob_1>
+
+        Amount Involved:
+        242756
+
+        Actual Loss:
+        290721
+
+        <organization_5>/STR raised? If yes, add ref no.:
+        FID-<phone_2>
+
+        Report Issuance Date:
+        <dob_2>
+
+
+Incident Details:
+        Incident Date/Period
+        <dob_3>
+
+
+Involved <persontype_1> Details:
+        <persontype_2> Name
+        Designation
+        Staff ID
+
+        <person_1>
+        <organization_6>
+        90530
+
+
+Distribution List
+        TBD
+
+
+
+
+
+
+<persontype_3>
+        <person_2> (Staff ID: xxxxx)
+        <persontype_4> / <persontype_5>
+
+        <person_3> (Staff ID: xxxxx)
+        <persontype_6>
+
+        <person_4> (Staff ID: xxxxx)
+        Report <organization_7>
+
+
+1.  Background
+1. <dob_4>: Case received from <organization_8>. Nature: Signature Forgery. Severity: Medium.
+2.  Scope
+1. The scope of the investigation is limited to the review of the abovementioned incident and related events including but not limited to:
+1. Verify the accuracy of the <persontype_7>'s allegations.
+1. Understand the motives of the <persontype_8> involved.
+3.  Approach
+3.1.  Review undertaken:
+1. Review the FinnOne Applications.
+3.2.  Individuals Interviewed:
+1. RAHUL
+1. <person_5>
+4.  Executive Summary
+1. Case Reference: 11122019/1/HD
+1. <persontype_9>: RAHUL (App ID: <phone_3>)
+1. Nature of Incident: Signature Forgery (Signature Forgery)
+1. Referred By: <organization_9>
+1. <person_6>: No | Severity: Medium
+1. <persontype_10> ID: 90530 | <persontype_11> Involved: Yes
+1. Fraud Type: Internal Fraud
+1. STR Requirement: Yes | <organization_10> Report Ref: FID-<phone_4>.  Findings
+1. Activities:
+1. Captioned case logged under CARDS_AFTER_MURABAHA-PDC scheme.
+
+1. <organization_11> Findings:
+1. <persontype_12> (RAHUL) contacted. Irregularities linked to Signature Forgery identified.
+1. Signature mismatch and KYC deviation observed.
+
+1. Exposure Check:
+1. Internal watchlist and previous applications screened - no further matches.
+
+1. Action Taken: {
+  "Sl No": 1.0,
+   "Daily Log Reference": "<dob_1>/1/HD",
+  "Case Reference": "Signature Forgery \u2013 RAHUL \u2013 RIM No <phone_1>, <staffid_1>",
+   "Referred By": "<organization_1>",
+   "Nature of Incidents": "Signature Forgery",
+  "Sanadak (Yes/No)": "No",
+  "Severity": "",
+   "Date Received": "<dob_2>",
+"Assigned Year": 2019.0,
+   "Month": 12.0,
+  "Case Summary": "\u2022\tStatus: Closed | Stage: With <persontype_1>\n\u2022\tAging: Completed | Days: 191\n\u2022\tAmount Involved: AED 242756 | Actual Loss: AED 290721\n\u2022\tCurrent <persontype_2>: <person_1>\n\u2022\tCurrent Remarks: Documents verified and under supervisory review",
+   "Actual Amount": 290721.0,
+   "Amount Involved": 242756.0,
+   "Target / Completion Date": "<dob_3>",
+   "Handover Date": "",
+   "Current Remarks": "Documents verified and under supervisory review",
+   "DC Recommended (Y/N)": "Yes",
+  "<persontype_7> Involved (Y/N)": "Yes",
+   "Staff ID": 90530.0,
+   "STR Requirement (Y/N)": "Yes",
+  "Internal / External Fraud / Not Applicable": "Internal Fraud",
+  "Case Closure Checklist (Y/N)": "Yes",
+   "Confidential_flag(Y/N)": "No"
+ }
