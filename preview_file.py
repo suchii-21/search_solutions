@@ -105,6 +105,5 @@ class PREVIEWFILES:
         return preview_list
 
 
-clss = PREVIEWFILES().get_blob_sas_url(['No citations found', 'adibstorageblobcontainer/case_1/Fraud_Report_Case_01.docx'])
-print(clss)
+
 # print(result)
